@@ -3,6 +3,7 @@
 - training-main.html
 - js/app.js
 - json.txt
+- main.html (здесь добавлены теги)
 
 В файле js/app.js - новый модуль training
 

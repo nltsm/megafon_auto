@@ -249,7 +249,7 @@ app.addModule('training', function () {
 	function fillData(categories, callback) {
 		$.ajax({
 			method: 'get',
-			url: '/json.txt',
+			url: 'https://nlt-sm.ru/demo/megafon-2/json.txt',
 			success: function (dataV) {
 				var i  = 1;
 				

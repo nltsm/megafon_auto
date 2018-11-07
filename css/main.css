@@ -1864,6 +1864,29 @@ img.mfp-img {
   display: block;
 }
 
+.tags {
+  padding: 30px 0;
+}
+
+.tags_row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tags_row span {
+  font-size: 16px;
+}
+
+.tags_row a {
+  margin-left: 15px;
+  color: #000;
+  font-size: 16px;
+}
+
+.tags_row a:hover {
+  text-decoration: none;
+}
+
 .test-drive {
   margin-bottom: 30px;
 }
