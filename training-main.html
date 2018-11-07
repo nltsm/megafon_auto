@@ -66,65 +66,28 @@
 		
 		<div class="pdd_data">
 			<div class="wrapper">
-				<div class="training">
-					<div class="training_questions">
-						<a href="">1</a>
-						<a href="">2</a>
-						<a href="" class="current">3</a>
-						<a href="">4</a>
-						<a href="" class="invalid">5</a>
-						<a href="">6</a>
-						<a href="" class="valid">7</a>
-						<a href="" class="valid">8</a>
-						<a href="">9</a>
-						<a href="">10</a>
-						<a href="">11</a>
-						<a href="">12</a>
-						<a href="">13</a>
-						<a href="">14</a>
-						<a href="">15</a>
-						<a href="">16</a>
-						<a href="">17</a>
-						<a href="">18</a>
-						<a href="">19</a>
-						<a href="">20</a>
-					</div>
+				<div id="training-question" class="training">
+					<div class="training_questions"></div>
 					
 					<div class="question">
 						<div class="question_row">
 							<div class="question_main">
 								<div class="question_image">
-									<img src="img/q.jpg" alt="">
+									<img src="" alt="">
 								</div>
 								
-								<div class="question_text">Вопрос 3</div>
+								<div class="question_text">Вопрос <span></span></div>
 								
-								<div class="question_name">На каком рисунке изображена дорога с разделительной полосой?</div>
+								<div class="question_name"></div>
 								
-								<div class="question_answers">
-									<label class="checkbox __radio">
-										<input type="radio" name="radio" class="checkbox_input">
-										<span class="checkbox_ico"></span>
-										<span class="checkbox_text">Только на правом</span>
-									</label>
-									<label class="checkbox __radio">
-										<input type="radio" name="radio" class="checkbox_input">
-										<span class="checkbox_ico"></span>
-										<span class="checkbox_text">Ни на одном</span>
-									</label>
-									<label class="checkbox __radio">
-										<input type="radio" name="radio" class="checkbox_input">
-										<span class="checkbox_ico"></span>
-										<span class="checkbox_text">На обоих</span>
-									</label>
-								</div>
+								<div class="question_answers"></div>
 								
 								<div class="question_buttons">
 									<div class="question_button">
-										<button class="pdd_button __m0">Ответить</button>
+										<button class="pdd_button __m0" id="answer-button">Ответить</button>
 									</div>
 									<div class="question_button">
-										<button class="question_button-1">Отложить</button>
+										<button class="question_button-1" id="go-to-next">Отложить</button>
 									</div>
 									<div class="question_button">	
 										<a href="" class="question_button-2">Подсказка</a>
@@ -140,6 +103,8 @@
 						<div class="question_tip">Из перечисленных понятий только транспортное средство, остановившееся на этой полосе из-за образования затора не относится к термину «Препятствие» 1.2).</div>
 					</div>
 				</div>
+				
+				<div class="training-done" id="training-done"></div>
 			</div>
 		</div>
 	</div>

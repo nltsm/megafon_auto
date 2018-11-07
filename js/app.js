@@ -155,10 +155,6 @@ app.addModule('timer', function () {
 	};
 	
 	window.initTimer = function (seconds) {
-		if (!seconds) {
-			seconds = 0;
-		}
-		
 		$('.timer').timer({
 			format: '%H:%M:%S',
 			seconds: seconds
@@ -169,12 +165,206 @@ app.addModule('timer', function () {
 		$('.timer').timer('remove');
 		localStorage.removeItem('seconds');
 	};
+	window.resetTimer = function (seconds) {
+		window.removeTimer();
+		window.initTimer(seconds);
+	}
 });
 app.addModule('top-header', function () {
 	this.init = function () {
 		$('.top-header_user-txt').click(function () {
 			$(this).closest('.top-header_user').toggleClass('active');
 		});
+	}
+});
+app.addModule('training', function () {
+	var self = this;
+	var data = [];
+	var baseUrl = 'http://auto.roscontent.ru';
+	
+	this.init = function () {
+		window.resetTimer();
+		
+		var categories = [1, 3, 2, 8, 11, 12, 13, 14];
+		
+		trainingStart(categories);
+		
+		$(document).on('click', '.training_questions a', function (e) {
+			e.preventDefault();
+			var id = $(this).attr('href');
+			
+			changeQuestion(id);
+		});
+		
+		$('#answer-button').click(function (e) {
+			e.preventDefault();
+			
+			if (!$('.checkbox_input:checked').length) {
+				return;
+			}
+			answer();
+			goToNext();
+			checkFinish();
+		});
+		$('#go-to-next').click(function (e) {
+			e.preventDefault();
+			goToNext();
+		});
+	};
+	
+	function trainingStart(categories) {
+		$('#training-category').addClass('__hidden');
+		$('#training-question').removeClass('__hidden');
+		
+		self.fillQuestions(categories);
+	}
+	
+	this.fillQuestions = function (categories) {
+		fillData(categories, function () {
+			initFirst();
+		});
+	};
+	function goToNext() {
+		var next = $('.training_questions a.current').next();
+		
+		if (next.hasClass('answered')) {
+			next = $('.training_questions a.answered:last').next();
+		}
+		
+		if (!next.length) {
+			next = $('.training_questions a:not(.answered):first');
+		}
+		
+		if (next.length && !next.hasClass('answered')) {
+			changeQuestion(next.attr('href'));
+		}
+	}
+	function changeQuestion(id) {
+		var item = getItemById(id);
+		
+		changeHtmlData(item);
+		setAnswered();
+		
+	}
+	function fillData(categories, callback) {
+		$.ajax({
+			method: 'get',
+			url: '/json.txt',
+			success: function (dataV) {
+				var i  = 1;
+				
+				data = JSON.parse(dataV);
+				
+				data = data.filter(function (value) {					
+					return value['id'] in categories;
+				});
+				
+				data.forEach(function (item) { 
+					item.index = i++;
+				});
+				
+				callback();
+			}
+		});
+	}
+	function initFirst() {
+		data.forEach(function (item) { 
+			var link = $('<a />');
+			link.html(item.index);
+			link.attr('href', item.id);
+			
+			if (item.index == 1) {
+				link.addClass('current');
+				changeQuestion(item['id']);
+			}
+			
+			$('.training_questions').append(link);
+		});
+	}
+	function getItemById(id) {
+		var arr = data.filter(function (item) { 
+			return item['id'] == id;
+		});
+		
+		return arr[0];
+	}
+	function changeHtmlData(item) {
+		$('.question_image img').attr('src', baseUrl + item.image.url);
+		$('.question_text span').html(item.index);
+		$('.question_name').html(item.title);
+		$('.question_tip').html(item.hint);
+		
+		$('.training_questions a').removeClass('current');
+		$('.training_questions a[href="'+ item['id'] + '"]').addClass('current');
+		
+		$('.question_answers').html('')
+		item.answers.forEach(function (answer) { 
+			var label = $('<label />').addClass('checkbox __radio');
+			var input = $('<input />')
+				.attr('type', 'radio')
+				.addClass('checkbox_input')
+				.attr('name', 'answer')
+				.attr('data-id', answer.id)
+				.attr('data-correct', answer.is_correct);
+			var ico = $('<div />').addClass('checkbox_ico');
+			var text = $('<div />').addClass('checkbox_text').html(answer.title);
+			
+			label.append(input);
+			label.append(ico);
+			label.append(text);
+			
+			$('.question_answers').append(label);
+		});
+	}
+	function answer() {
+		var checked = $('.checkbox_input:checked');
+		var correct = checked.attr('data-correct');
+		var current = $('.training_questions a.current');
+		
+		if (correct == 'true') {
+			current.addClass('valid')
+		} else {
+			current.addClass('invalid')
+		}
+		
+		current.addClass('answered').attr('data-checked-id', checked.attr('data-id'));
+	}
+	function setAnswered() {
+		var current = $('.training_questions a.current');
+		var checked = current.attr('data-checked-id');
+
+		if (current.hasClass('answered')) {
+			$('.checkbox_input').prop('disabled', true);
+			$('.checkbox_input[data-correct="true"]')
+					.prop('checked', true)
+					.closest('label')
+					.addClass('__is-valid');
+		}
+		
+		if (current.hasClass('invalid')) {
+			$('.checkbox_input').prop('disabled', true);
+			$('.checkbox_input[data-id="' + checked + '"]')
+					.prop('checked', true)
+					.closest('label')
+					.addClass('__is-invalid');
+		}
+	}
+	function checkFinish() {
+		var links = $('.training_questions a');
+		
+		if (!$('.training_questions a:not(.answered)').length) {
+			$('#training-question').addClass('__hidden');
+			$('#training-done').addClass('__show');
+			
+			var html = "<p>Вопросов: <span>" + data.length + "</span></p>";
+			html+= "<p>Правильно: <span class=\"green\">" + links.filter('.valid').length  + "</span></p>";
+			html+= "<p>Ошибок: <span class=\"red\">" + links.filter('.invalid').length + "</span></p>";
+			html+= "<p>Потрачено: <span>" + $('.timer').html() + "</span></p>";
+			
+			$('#training-done').html(html);
+			
+			window.removeTimer();
+		}
 	}
 });
 app.addModule('video.games', function () {

@@ -796,7 +796,15 @@ img.mfp-img {
   cursor: pointer;
   align-items: center;
   display: flex;
-  margin-bottom: 12px;
+  padding: 6px 13px;
+}
+
+.checkbox.__is-invalid {
+  background: #fdebec;
+}
+
+.checkbox.__is-valid {
+  background: #e3f4eb;
 }
 
 .checkbox_input {
@@ -1764,10 +1772,6 @@ img.mfp-img {
   margin-bottom: 35px;
 }
 
-.question_answers {
-  padding-left: 13px;
-}
-
 .question_buttons {
   margin-top: 35px;
   display: flex;
@@ -2096,6 +2100,10 @@ img.mfp-img {
   padding: 30px 0;
 }
 
+.training.__hidden {
+  display: none;
+}
+
 .training_select-title {
   font-size: 18px;
   font-weight: 500;
@@ -2121,19 +2129,47 @@ img.mfp-img {
   color: #000;
   text-decoration: none;
   text-align: center;
+  border: 1px solid transparent;
 }
 
 .training_questions a.current {
-  background: #00ba4d;
-  color: #ffffff;
+  border: 1px solid #c1c1c1 !important;
 }
 
 .training_questions a.invalid {
   background: #fddadb;
+  border-color: #fddadb;
 }
 
 .training_questions a.valid {
   background: #caebda;
+  border-color: #caebda;
+}
+
+.training-done {
+  background: #efefef;
+  padding: 30px;
+  display: none;
+}
+
+.training-done.__show {
+  display: block;
+}
+
+.training-done p {
+  margin-bottom: 20px;
+}
+
+.training-done p:last-child {
+  margin-bottom: 0;
+}
+
+.training-done p span.green {
+  color: #00a651;
+}
+
+.training-done p span.red {
+  color: #ff4f57;
 }
 
 .video {
