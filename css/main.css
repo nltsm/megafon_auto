@@ -2915,14 +2915,15 @@ img.mfp-img {
     flex-grow: 1;
   }
 
-  .pdd_col:nth-child(3) {
-    display: none;
-  }
-
   .pdd_head {
     padding-left: 115px;
     margin-top: -55px;
     margin-bottom: 40px;
+  }
+
+  .pdd_button {
+    margin-left: 0;
+    margin-top: 10px;
   }
 
   .pdd_content p {
