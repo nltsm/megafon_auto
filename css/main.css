@@ -1783,10 +1783,6 @@ img.mfp-img {
   margin-right: 15px;
 }
 
-.question_button:first-child {
-  margin-right: 30px;
-}
-
 .question_button-1 {
   font-size: 15px;
   color: #000000;
@@ -3153,10 +3149,18 @@ img.mfp-img {
     padding: 10px 30px;
   }
 
-  .question_button:last-child {
+  .question_button:first-child {
     width: 100%;
+  }
+
+  .question_button {
+    margin-right: 0;
+    width: 50%;
     text-align: center;
-    margin-top: 20px;
+  }
+
+  .question_button .pdd_button {
+    margin: 0 auto 20px;
   }
 
   .test-drive_item {

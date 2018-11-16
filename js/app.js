@@ -194,6 +194,8 @@ app.addModule('training', function () {
 			var id = $(this).attr('href');
 			
 			changeQuestion(id);
+			
+			$(".question_tip").slideUp();
 		});
 		
 		$('#answer-button').click(function (e) {
