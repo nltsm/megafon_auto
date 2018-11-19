@@ -8,7 +8,7 @@ app.addModule('brands', function () {
 });
 app.addModule('pdd-open', function () {
 	this.init = function () {
-		$('#pdd_select').on("click", function () {
+		$(document).on("click",'#pdd_select', function () {
 			$.ajax({
 				url: "/v1/pdds/training_select",
 				dataType: 'text',
@@ -41,7 +41,7 @@ app.addModule('pdd-open', function () {
 				}
 			});
 		});
-		$('#pdd_exam_start').on("click", function () {
+		$(document).on("click", '#pdd_exam_start', function () {
 			var id = "/pdds/exam/?id=" + $('.checkbox_input:checked').attr("id")
 			$("#pdd_exam_start").attr("href", id);
 		});
