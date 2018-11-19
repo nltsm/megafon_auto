@@ -21,14 +21,14 @@ app.addModule('pdd-open', function () {
 				}
 			});
 		});
-		$('#pdd_start').on("click", function () {
+		$(document).on("click", '#pdd_start', function () {
 			var ids = "/pdds/training/?ids="
 			$('.checkbox_input:checked').each(function (index) {
 				ids += $(this).attr("id") + ","
 			});
 			$("#pdd_start").attr("href", ids);
 		});
-		$('#pdd_exam_select').on("click", function () {
+		$(document).on("click", '#pdd_exam_select', function () {
 			$.ajax({
 				url: "/v1/pdds/exam_select",
 				dataType: 'text',
