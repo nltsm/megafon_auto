@@ -1896,6 +1896,7 @@ img.mfp-img {
   padding: 20px;
   display: flex;
   align-items: flex-end;
+  background-position: center center;
 }
 
 .test-drive_item:after {
