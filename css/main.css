@@ -1204,6 +1204,7 @@ img.mfp-img {
   text-decoration: none;
   position: relative;
   z-index: 1;
+  background-position: center center;
 }
 
 .main-news-2_item:after {
