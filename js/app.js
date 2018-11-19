@@ -6,6 +6,47 @@ app.addModule('brands', function () {
 		})
 	}
 });
+app.addModule('pdd-open', function () {
+	this.init = function () {
+		$('#pdd_select').on("click", function () {
+			$.ajax({
+				url: "/v1/pdds/training_select",
+				dataType: 'text',
+				data: {id: "select"},
+				success: function (data, textStatus, jqXHR) {
+					$("#pdd").html(data)
+				},
+				error: function (jqXHR, textStatus, errorThrown) {
+					$("#pdd").empty()
+				}
+			});
+		});
+		$('#pdd_start').on("click", function () {
+			var ids = "/pdds/training/?ids="
+			$('.checkbox_input:checked').each(function (index) {
+				ids += $(this).attr("id") + ","
+			});
+			$("#pdd_start").attr("href", ids);
+		});
+		$('#pdd_exam_select').on("click", function () {
+			$.ajax({
+				url: "/v1/pdds/exam_select",
+				dataType: 'text',
+				data: {sel: "select"},
+				success: function (data, textStatus, jqXHR) {
+					$("#pdd").html(data)
+				},
+				error: function (jqXHR, textStatus, errorThrown) {
+					$("#pdd").empty()
+				}
+			});
+		});
+		$('#pdd_exam_start').on("click", function () {
+			var id = "/pdds/exam/?id=" + $('.checkbox_input:checked').attr("id")
+			$("#pdd_exam_start").attr("href", id);
+		});
+	}
+});
 app.addModule('header', function () {
 	this.init = function () {
 		$('.header_menu-btn').click(function () {
