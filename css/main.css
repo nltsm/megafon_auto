@@ -1206,7 +1206,7 @@ img.mfp-img {
   background-size: cover;
   text-decoration: none;
   background-position: center center;
-  padding: 20px;
+  padding: 7px;
   position: relative;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
 }
@@ -1917,10 +1917,11 @@ img.mfp-img {
   background-size: cover;
   height: 390px;
   text-decoration: none;
-  padding: 20px;
+  padding: 7px;
   display: block;
   background-position: center center;
   position: relative;
+  border-bottom: 1px solid #dddddd;
 }
 
 .test-drive_item:before {
