@@ -2340,6 +2340,10 @@ img.mfp-img {
   opacity: 0.6;
 }
 
+.video_item.__full .video_image:after {
+  display: none;
+}
+
 .video_item.__full .video_image {
   height: 190px;
 }
