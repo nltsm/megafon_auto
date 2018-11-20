@@ -2586,6 +2586,10 @@ img.mfp-img {
     font-size: 36px;
   }
 
+  .brands_items {
+    height: 43px;
+  }
+
   .games_content {
     padding: 20px 0;
   }
@@ -2632,6 +2636,7 @@ img.mfp-img {
 
   .main-content {
     display: block;
+    padding-bottom: 30px;
   }
 
   .main-content_left {
