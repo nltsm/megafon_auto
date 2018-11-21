@@ -1215,17 +1215,6 @@ img.mfp-img {
   color: #fff;
 }
 
-.main-news-2_item:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: '';
-  background: linear-gradient(to right, #525252, #000);
-  opacity: 0.2;
-}
-
 .main-news-2_item:after {
   content: '';
   position: absolute;
@@ -1922,17 +1911,6 @@ img.mfp-img {
   background-position: center center;
   position: relative;
   border-bottom: 1px solid #dddddd;
-}
-
-.test-drive_item:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: '';
-  background: linear-gradient(to right, #525252, #000);
-  opacity: 0.2;
 }
 
 .test-drive_item:after {
