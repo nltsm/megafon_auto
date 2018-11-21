@@ -2901,11 +2901,7 @@ img.mfp-img {
   }
 
   .main-news-2_item {
-    border: none;
-  }
-
-  .main-news-2_item {
-    width: 50%;
+    width: 100%;
   }
 
   .main-news-2_item.__mobile-base {
@@ -3207,10 +3203,6 @@ img.mfp-img {
 
   .games_items.__min .games_item {
     width: 50%;
-  }
-
-  .main-news-2_item {
-    width: 100%;
   }
 
   .main-news-2_item.__mobile-base {
