@@ -6,6 +6,28 @@ app.addModule('brands', function () {
 		})
 	}
 });
+app.addModule('characteristic', function () {
+	this.init = function () {
+		var nav = $('.characteristic_nav a');
+		
+		nav.click(function (e) {
+			e.preventDefault();
+			
+			$('.characteristic_content').removeClass('active');
+			$($(this).attr('href')).addClass('active');
+			
+			$('.characteristic_nav li').removeClass('active');
+			$(this).closest('li').addClass('active');
+		});
+		
+		$('.characteristic_head').click(function (e) {
+			e.preventDefault();
+			
+			$('.characteristic_body').not($(this).next()).slideUp();
+			$(this).next().slideToggle();
+		});
+	}
+});
 app.addModule('pdd-open', function () {
 	this.init = function () {
 		$(document).on("click",'#pdd_select', function () {
