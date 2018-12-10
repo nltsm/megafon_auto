@@ -1607,7 +1607,7 @@ img.mfp-img {
 }
 
 .model_image {
-  height: 60px;
+  height: 90px;
   display: flex;
   align-items: flex-end;
   padding-bottom: 6px;
@@ -1615,7 +1615,7 @@ img.mfp-img {
 }
 
 .model_image img {
-  max-height: 60px;
+  max-height: 90px;
 }
 
 .model_title {
