@@ -1592,6 +1592,8 @@ img.mfp-img {
   padding: 15px 10px;
   border-bottom: 1px solid #dcdfde;
   margin: 0 -10px;
+  display: block;
+  text-decoration: none;
 }
 
 .modify_row {
