@@ -1071,6 +1071,69 @@ img.mfp-img {
   padding-top: 2px;
 }
 
+.dealer-content p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.dealer-content p span {
+  display: block;
+  text-decoration: underline;
+}
+
+.dealer-content p a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.dealer-content p strong {
+  font-weight: 500;
+}
+
+.dealer-select {
+  margin-bottom: 20px;
+}
+
+.dealer,
+.catalog-marks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-bottom: 1px solid #d5d9d8;
+  margin-bottom: 20px;
+}
+
+.dealer_item,
+.catalog-marks_item {
+  text-decoration: none;
+  text-align: center;
+  width: 25%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.dealer_image,
+.catalog-marks_image {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.dealer_image img,
+.catalog-marks_image img {
+  max-height: 50px;
+}
+
+.dealer_text,
+.catalog-marks_text {
+  font-size: 12px;
+  color: #000000;
+}
+
 .footer {
   padding: 15px 0;
   border-top: 1px solid #d8d8d8;
@@ -1860,6 +1923,25 @@ img.mfp-img {
   border: 1px solid #eee;
   padding: 10px;
   vertical-align: middle;
+}
+
+.dealer-block {
+  margin-bottom: 17px;
+}
+
+.dealer-block_item {
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%226%22%20height%3D%2210%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M.172.17a.579.579%200%200%200-.001.823L4.202%205%20.171%209.007a.579.579%200%200%200%20.001.823c.23.227.6.227.83-.001L5.87%205%201.002.171a.59.59%200%200%200-.83%200z%22%20fill%3D%22%23000%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E) no-repeat right center;
+  display: block;
+  padding: 17px 0 17px;
+  color: #000;
+  border-top: 1px solid #d5d9d8;
+}
+
+.dealer-block_item:last-child {
+  border-bottom: 1px solid #d5d9d8;
 }
 
 .pagination {
