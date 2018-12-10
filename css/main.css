@@ -949,11 +949,11 @@ img.mfp-img {
 }
 
 .characteristic_nav li {
-  margin: 0 10px 10px 0;
+  margin: 0 20px 10px 0;
 }
 
 .characteristic_nav li a {
-  font-size: 16px;
+  font-size: 20px;
   color: #000000;
   text-decoration: none;
   border-bottom: 1px solid #000000;
@@ -998,7 +998,7 @@ img.mfp-img {
 }
 
 .characteristic_block-title {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   color: #000;
   margin-bottom: 15px;
