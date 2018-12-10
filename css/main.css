@@ -997,6 +997,15 @@ img.mfp-img {
   display: block;
 }
 
+.characteristic_block-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #dcdfde;
+}
+
 .checkbox {
   cursor: pointer;
   align-items: center;
