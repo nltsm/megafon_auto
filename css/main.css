@@ -678,7 +678,8 @@ img.mfp-img {
 
 .banner {
   padding: 50px 0;
-  background: #00b956;
+  background-size: cover;
+  background-position: top center;
 }
 
 .banner .wrapper {
