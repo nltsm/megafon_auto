@@ -24,6 +24,22 @@ app.addModule('characteristic', function () {
 			e.preventDefault();
 			
 			$('.characteristic_body').not($(this).next()).slideUp();
+			$('.characteristic_item').not($(this).closest('.characteristic_item')).removeClass('active');
+			
+			$(this).closest('.characteristic_item').toggleClass('active');
+			$(this).next().slideToggle();
+		});
+	}
+});
+app.addModule('dealer', function () {
+	this.init = function () {
+		$('.dealer-block_link').click(function (e) {
+			e.preventDefault();
+			
+			$('.dealer-block_content').not($(this).next()).slideUp();
+			$('.dealer-block_item').not($(this).closest('.dealer-block_item')).removeClass('active');
+			
+			$(this).closest('.dealer-block_item').toggleClass('active');
 			$(this).next().slideToggle();
 		});
 	}
@@ -133,6 +149,24 @@ app.addModule('question', function () {
 			e.preventDefault();
 			
 			$('.question_tip').slideToggle();
+		})
+	}
+});
+app.addModule('select', function () {
+	this.init = function () {
+		$('.select').select2({
+			language: "ru",
+			placeholder: "Начните вводить название города....",
+			allowClear: true,
+			width: '100%'
+		});
+		
+		$(document).on('input', '.select2-search__field', function () {
+			if ($(this).val() === '') {
+				$(this).closest('.select2-search').removeClass('active')
+			} else {
+				$(this).closest('.select2-search').addClass('active')
+			}
 		})
 	}
 });
