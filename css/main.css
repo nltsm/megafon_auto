@@ -1609,6 +1609,16 @@ img.mfp-img {
   transition: 0.3s;
 }
 
+.main-news-2_item:after {
+  content: '';
+  position: absolute;
+  top: 240px;
+  width: 100%;
+  left: 0;
+  height: 1px;
+  background: #dddddd;
+}
+
 .main-news-2_item:hover {
   opacity: 0.9;
 }
