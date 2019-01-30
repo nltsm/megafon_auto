@@ -272,6 +272,11 @@ app.addModule('top-header', function () {
 		$('.top-header_user-txt').click(function () {
 			$(this).closest('.top-header_user').toggleClass('active');
 		});
+		
+		$('.top-header_btn').click(function () {
+			$(this).toggleClass('active')
+			$('.top-header_list').toggleClass('active')
+		})
 	}
 });
 app.addModule('video.games', function () {
