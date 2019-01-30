@@ -33,7 +33,7 @@ app.addModule('characteristic', function () {
 });
 app.addModule('dealer', function () {
 	this.init = function () {
-		$('.dealer-block_link').click(function (e) {
+		$(document).on('click', '.dealer-block_link', function (e) {
 			e.preventDefault();
 			
 			$('.dealer-block_content').not($(this).next()).slideUp();
