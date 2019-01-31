@@ -1,4 +1,12 @@
 @font-face {
+    src: url(../fonts/7dee4c58b493aec3a0a00f246ee676dd.woff2) format("woff2"),
+	url(../fonts/6cd1463fde8a14005ae5954c7997786c.woff) format("woff");
+    font-family: GraphikRegular;
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
 	font-family: 'MegaFonGraphikLC';
 	src: asset-url('MegaFonGraphikLC-Light.eot?#iefix') format('embedded-opentype'), asset-url('MegaFonGraphikLC-Light.otf') format('opentype'), asset-url('MegaFonGraphikLC-Light.woff') format('woff'), asset-url('MegaFonGraphikLC-Light.ttf') format('truetype'), asset-url('MegaFonGraphikLC-Light.svg#MegaFonGraphikLC-Light') format('svg');
 	font-weight: 300;
@@ -2494,6 +2502,7 @@ img.mfp-img {
 
 .top-header {
 	background: #303030;
+	font-family: 'GraphikRegular';
 }
 
 .top-header_enter-btn {
