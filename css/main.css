@@ -3827,6 +3827,10 @@ img.mfp-img {
 		font-size: 15px;
 		padding: 12px 20px 11px;
 	}
+	.top-header_list a:hover {
+		background-color: #ebedef;
+		font-weight: normal;
+	}
 
 	.top-header_list li:first-child a {
 		border-top: 1px solid #d9d9d9;
@@ -3850,9 +3854,11 @@ img.mfp-img {
 		display: block;
 	}
 
-	.top-header_list a:hover,
 	.top-header_list a.active {
 		font-weight: 600;
+	}
+	.top-header_list a:hover,
+	.top-header_list a.active {
 		color: #333 !important;
 	}
 
