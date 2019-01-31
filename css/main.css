@@ -1,9 +1,21 @@
 @font-face {
-    src: url(../fonts/7dee4c58b493aec3a0a00f246ee676dd.woff2) format("woff2"),
-	url(../fonts/6cd1463fde8a14005ae5954c7997786c.woff) format("woff");
-    font-family: GraphikRegular;
-    font-weight: 400;
-    font-style: normal
+	font-family: 'Graphik';
+	src: url('../fonts/Graphik Regular.eot');
+	src:  url('../fonts/Graphik Regular.woff') format('woff'),
+	url('../fonts/Graphik Regular.ttf') format('truetype'),
+	url('../fonts/Graphik Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Graphik';
+	src: url('../fonts/Graphik-Semibold.eot');
+	src: url('../fonts/Graphik-Semibold.woff') format('woff'), 
+	url('../fonts/Graphik-Semibold.ttf') format('truetype'),
+	url('../fonts/Graphik-Semibold.svg') format('svg');
+	font-weight: 600;
+	font-style: normal;
 }
 
 @font-face {
@@ -2502,7 +2514,7 @@ img.mfp-img {
 
 .top-header {
 	background: #333;
-	font-family: 'GraphikRegular';
+	font-family: 'Graphik';
 }
 
 .top-header_enter-btn {
