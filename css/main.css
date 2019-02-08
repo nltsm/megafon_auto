@@ -817,6 +817,7 @@ img.mfp-img {
 	padding: 0 20px;
 	border: 1px solid #dddddd;
 	pointer-events: none;
+	white-space: nowrap;
 }
 
 .select2-search.select2-search--dropdown.active:after {
