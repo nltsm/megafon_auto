@@ -873,9 +873,9 @@ img.mfp-img {
 	font-size: 15px;
 	font-weight: 500;
 	color: #ffffff;
-	padding: 11px 32px;
+	padding: 21px 60px;
 	background: #731982;
-	border-radius: 24px;
+	border-radius: 50px;
 	text-decoration: none;
 	display: inline-block;
 	transition: 0.3s;
@@ -1409,14 +1409,18 @@ img.mfp-img {
 	color: #ffffff;
 	text-decoration: none;
 	background: #00b956;
-	padding: 11px 32px;
+	padding: 15px 78px;
 	flex-shrink: 0;
 	transition: 0.3s;
-	border-radius: 24px;
+	border-radius: 50px;
+	display: inline-block;
 }
 
 .game_btn:hover {
-	opacity: 0.7;
+	background: #10e272;
+}
+.game_btn:active {
+	background: #404d46;
 }
 
 .games {
@@ -1559,6 +1563,7 @@ img.mfp-img {
 .header_logo img {
 	flex-shrink: 0;
 	margin-right: 20px;
+	width: 158px;
 }
 
 .header_logo-text {
@@ -2250,11 +2255,11 @@ img.mfp-img {
 }
 
 .pdd_button {
-	width: 190px;
+	width: 200px;
 	display: block;
 	text-decoration: none;
 	text-align: center;
-	padding: 17px 5px;
+	padding: 21px 5px;
 	border-radius: 30px;
 	color: #ffffff;
 	background: #00ba4d;
@@ -2268,6 +2273,9 @@ img.mfp-img {
 
 .pdd_button:hover {
 	background: #14ae54;
+}
+.pdd_button:active {
+	background: #404d46;
 }
 
 .pdd_content {
@@ -2461,6 +2469,7 @@ img.mfp-img {
 .tags_row {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
 }
 
 .tags_row span {
@@ -2486,6 +2495,7 @@ img.mfp-img {
 	position: relative;
 	border: 1px solid #dddddd;
 	transition: 0.3s;
+	margin-bottom: -1px;
 }
 
 .test-drive_content {
@@ -2842,6 +2852,7 @@ img.mfp-img {
 	width: 14px;
 	height: 8px;
 	margin-right: 3px;
+	transform: rotate(-90deg);
 }
 
 .video_list li.active a,
@@ -2867,6 +2878,8 @@ img.mfp-img {
 .video_item {
 	border: 1px solid #e3e3e3;
 	width: 50%;
+	margin-bottom: -1px;
+	margin-right: -1px;
 }
 
 .video_item.__full {
@@ -3350,6 +3363,10 @@ img.mfp-img {
 }
 
 @media screen and (max-width: 767px) {
+	.game_btn {
+		width: 100%;
+		text-align: center;
+	}
 	.top-header_content {
 		padding-right: 0;
 	}
@@ -3471,11 +3488,6 @@ img.mfp-img {
 	.banner_title {
 		font-size: 30px;
 		line-height: 36px;
-	}
-
-	.banner_button {
-		padding: 15px 47px;
-		font-size: 15px;
 	}
 
 	.brands {
