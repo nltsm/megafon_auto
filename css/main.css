@@ -1704,6 +1704,7 @@ img.mfp-img {
 }
 .main-news-2.__col-3 .main-news-2_item {
 	width: 33.33%;
+	padding-bottom: 34px;
 }
 .main-news-2.__col-3 .main-news-2_item > a {
 	text-decoration: none;
@@ -1713,9 +1714,12 @@ img.mfp-img {
 }
 
 .main-news-2.__col-3 .main-news-2_item .news_bottom {
-	position: static;
 	padding: 0 7px 10px;
 	width: 100%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	font-weight: 400;
 }
 .main-news-2.__col-3 .main-news-2_item.__mobile-base {
 	flex-wrap: wrap;
