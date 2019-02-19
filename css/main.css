@@ -1711,10 +1711,7 @@ img.mfp-img {
 	display: block;
 	padding: 15px 7px;
 }
-.main-news-2.__col-3 .main-news-2_item.__mobile-base > a:not(.main-news-2_image) {
-	width: 1%;
-	flex-grow: 1;
-}
+
 .main-news-2.__col-3 .main-news-2_item .news_bottom {
 	position: static;
 	padding: 0 7px 10px;
@@ -3384,6 +3381,10 @@ img.mfp-img {
 }
 
 @media screen and (max-width: 767px) {
+	.main-news-2.__col-3 .main-news-2_item.__mobile-base > a:not(.main-news-2_image) {
+		width: 1%;
+		flex-grow: 1;
+	}
 	.game_btn {
 		width: 100%;
 		text-align: center;
