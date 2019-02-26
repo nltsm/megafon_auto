@@ -2287,12 +2287,14 @@ img.mfp-img {
 	display: block;
 	text-decoration: none;
 	text-align: center;
-	padding: 21px 5px;
+	padding: 17px 5px 18px;
 	border-radius: 30px;
 	color: #ffffff;
 	background: #00ba4d;
 	margin-left: 70px;
 	transition: 0.3s;
+	font-size: 15px;
+	font-weight: 600;
 }
 
 .pdd_button.__m0 {
