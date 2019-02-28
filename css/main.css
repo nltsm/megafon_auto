@@ -1144,15 +1144,17 @@ img.mfp-img {
 .characteristic_head:after {
 	content: '';
 	position: absolute;
-	background-image: image-url("arrow-2.png");
+	background-image: image-url("arrow-down.svg");
 	background-position: top left;
 	background-repeat: no-repeat;
 	width: 14px;
 	height: 8px;
+	background-size: 14px 8px;
 	top: 50%;
 	right: 20px;
 	transform: translateY(-50%);
 	transition: 0.3s;
+	transform: rotate(180deg);
 }
 
 .characteristic_item.active .characteristic_head {
@@ -1160,7 +1162,7 @@ img.mfp-img {
 }
 
 .characteristic_item.active .characteristic_head:after {
-	transform: translateY(-50%) rotate(180deg);
+	transform: translateY(-50%) rotate(0);
 }
 
 .characteristic_body {
@@ -2294,7 +2296,7 @@ img.mfp-img {
 	margin-left: 70px;
 	transition: 0.3s;
 	font-size: 15px;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 .pdd_button.__m0 {
@@ -2876,13 +2878,14 @@ img.mfp-img {
 	content: '';
 	flex-shrink: 0;
 	margin-left: 5px;
-	background-image: image-url("arrow-2.png");
+	background-image: image-url("arrow-down.svg");
 	background-position: top left;
 	background-repeat: no-repeat;
 	width: 14px;
 	height: 8px;
+	background-size: 14px 8px;
 	margin-right: 3px;
-	transform: rotate(-90deg);
+	transform: rotate(90deg);
 }
 
 .video_list li.active a,
