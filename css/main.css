@@ -878,7 +878,7 @@ img.mfp-img {
 	border-radius: 50px;
 	text-decoration: none;
 	display: inline-block;
-	transition: 0.3s;
+	
 }
 
 .banner_button:hover {
@@ -907,7 +907,7 @@ img.mfp-img {
 .brands_items a {
 	margin: 0 5px;
 	flex-shrink: 0;
-	transition: 0.3s;
+	
 	padding: 5px 0;
 }
 
@@ -950,7 +950,7 @@ img.mfp-img {
 	background: #00b956;
 	padding: 4px 30px;
 	flex-shrink: 0;
-	transition: 0.3s;
+	
 	border-radius: 20px;
 }
 
@@ -982,7 +982,7 @@ img.mfp-img {
 	border-bottom: 1px solid #d8d8d8;
 	margin-bottom: -1px;
 	text-decoration: none;
-	transition: 0.3s;
+	
 }
 
 .catalog-marks_item:hover .catalog-marks_text {
@@ -1002,7 +1002,7 @@ img.mfp-img {
 .catalog-marks_text {
 	font-size: 12px;
 	color: #000000;
-	transition: 0.3s;
+	
 }
 
 .catalog-marks_item:hover .catalog-marks_text {
@@ -1137,7 +1137,7 @@ img.mfp-img {
 	text-decoration: none;
 	position: relative;
 	display: block;
-	transition: 0.3s;
+	
 	margin-bottom: -1px;
 }
 
@@ -1153,7 +1153,7 @@ img.mfp-img {
 	top: 50%;
 	right: 20px;
 	transform: translateY(-50%);
-	transition: 0.3s;
+	
 	transform: rotate(180deg);
 }
 
@@ -1224,7 +1224,7 @@ img.mfp-img {
 .checkbox.__radio .checkbox_ico {
 	border: 1px solid #d9d9d9;
 	border-radius: 50%;
-	transition: 0.3s;
+	
 }
 
 .checkbox_input:checked + .checkbox_ico {
@@ -1413,7 +1413,7 @@ img.mfp-img {
 	background: #00b956;
 	padding: 15px 78px;
 	flex-shrink: 0;
-	transition: 0.3s;
+	
 	border-radius: 50px;
 	display: inline-block;
 }
@@ -1461,7 +1461,7 @@ img.mfp-img {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	transition: 0.3s;
+	
 }
 
 .games_list a:after {
@@ -1514,7 +1514,7 @@ img.mfp-img {
 .games_item-inner span {
 	font-size: 15px;
 	color: #000000;
-	transition: 0.3s;
+	
 	display: block;
 }
 
@@ -1661,7 +1661,7 @@ img.mfp-img {
 	font-weight: 500;
 	text-decoration: none;
 	position: relative;
-	transition: 0.3s;
+	
 }
 
 .main-news-2_item span {
@@ -1745,7 +1745,7 @@ img.mfp-img {
 	color: #000;
 	text-decoration: none;
 	display: block;
-	transition: 0.3s;
+	
 }
 
 .main-news_title:hover {
@@ -1821,7 +1821,7 @@ img.mfp-img {
 
 .model_item {
 	text-decoration: none;
-	transition: 0.3s;
+	
 	display: block;
 }
 
@@ -2065,7 +2065,7 @@ img.mfp-img {
 .news_title a {
 	color: #000;
 	text-decoration: none;
-	transition: 0.3s;
+	
 	display: block;
 }
 
@@ -2095,7 +2095,7 @@ img.mfp-img {
 	color: #861286;
 	font-size: 12px;
 	text-decoration: none;
-	transition: 0.3s;
+	
 }
 
 .news_link:hover {
@@ -2161,7 +2161,7 @@ img.mfp-img {
 	text-decoration: none;
 	position: relative;
 	display: block;
-	transition: 0.3s;
+	
 	margin-bottom: -1px;
 }
 
@@ -2176,7 +2176,7 @@ img.mfp-img {
 	top: 50%;
 	right: 20px;
 	transform: translateY(-50%);
-	transition: 0.3s;
+	
 }
 
 .dealer-block_link:last-child {
@@ -2211,7 +2211,7 @@ img.mfp-img {
 	border: 1px solid #00b956;
 	padding: 7px 15px;
 	flex-shrink: 0;
-	transition: 0.3s;
+	
 	margin: 5px;
 	min-width: 42px;
 	color: #000;
@@ -2359,7 +2359,7 @@ img.mfp-img {
 	border-radius: 30px;
 	text-decoration: none;
 	display: inline-block;
-	transition: 0.3s;
+	
 }
 
 .popup-form_button:hover {
@@ -2419,7 +2419,7 @@ img.mfp-img {
 	font-size: 15px;
 	color: #000000;
 	background: none;
-	transition: 0.3s;
+	
 }
 
 .question_button-1:hover {
@@ -2432,7 +2432,7 @@ img.mfp-img {
 	background: none;
 	border-bottom: 1px solid #000000;
 	text-decoration: none;
-	transition: 0.3s;
+	
 }
 
 .question_button-2:hover {
@@ -2524,7 +2524,7 @@ img.mfp-img {
 	background-repeat: no-repeat;
 	position: relative;
 	border: 1px solid #dddddd;
-	transition: 0.3s;
+	
 	margin-bottom: -1px;
 }
 
@@ -2668,7 +2668,7 @@ img.mfp-img {
 	font-size: 12px;
 	display: flex;
 	align-items: center;
-	transition: 0.3s;
+	
 }
 
 .top-header_user-txt span:after {
@@ -2869,7 +2869,7 @@ img.mfp-img {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	transition: 0.3s;
+	
 }
 
 .video_list a:after {
@@ -2937,7 +2937,7 @@ img.mfp-img {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	transition: 0.3s;
+	
 }
 
 .video_image:hover:after {
@@ -2972,7 +2972,7 @@ img.mfp-img {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 2;
-	transition: 0.3s;
+	
 }
 
 .video_items.__min .video_image:before {
@@ -3007,7 +3007,7 @@ img.mfp-img {
 .video_title a {
 	text-decoration: none;
 	color: #000000;
-	transition: 0.3s;
+	
 }
 
 .video_title a:hover {
@@ -3048,7 +3048,7 @@ img.mfp-img {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	transition: 0.3s;
+	
 }
 
 .video-full_image:hover:after {
@@ -3075,7 +3075,7 @@ img.mfp-img {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 2;
-	transition: 0.3s;
+	
 }
 
 .video-full_image img {
@@ -3844,7 +3844,7 @@ img.mfp-img {
 		content: '';
 		border-style: solid;
 		border-width: 8px 5px 0 5px;
-		transition: 0.3s;
+		
 		border-color: #ffffff transparent transparent transparent;
 	}
 
