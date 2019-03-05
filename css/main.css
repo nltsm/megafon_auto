@@ -1591,7 +1591,6 @@ img.mfp-img {
 	color: #303030;
 	text-decoration: none;
 	padding: 7px 15px;
-	transition: 0.3s;
 	display: block;
 	border-radius: 20px;
 }
@@ -2294,7 +2293,6 @@ img.mfp-img {
 	color: #ffffff;
 	background: #00ba4d;
 	margin-left: 70px;
-	transition: 0.3s;
 	font-size: 15px;
 	font-weight: 500;
 }
